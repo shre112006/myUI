@@ -1,0 +1,34 @@
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+
+
+
+</head>
+<body background ="D:\my reg page\image.png";>
+    <button type="button" onclick=location.href="forgotpassword.html" class="forgotpws">Forgot password</button>
+<h1> login page</h1>
+
+<script>  
+function validateform(){  
+    var name = document.myform.name.value;  
+    var password = document.myform.password.value;  
+    if (name == null || name == "") {  
+        alert("Name can't be blank");  
+        return false;  
+    } else if (password.length < 6) {  
+        alert("Password must be at least 6 characters long.");  
+        return false;  
+    }  
+}  
+</script>  
+<form name="myform" method="post" action="valid.html" onsubmit="return validateform()">  
+    Name: <input type="text" name="name"><br/>  
+    Password: <input type="password" name="password"><br/>  
+    <input type="submit" value="login">  
+
+</form>
+  
+</body>
+</html>
